@@ -1,0 +1,39 @@
+{
+  "settings": {
+    "title": "Linktree Milabkid",
+    "header_img": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070",
+    "profile_name": "Your Name",
+    "profile_img": "https://via.placeholder.com/150",
+    "bio": "Welcome linktree Milabkid!",
+    "bg_gradient": "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+    "accent_color": "#ffffff",
+    "button_color": "rgba(255, 255, 255, 0.1)",
+    "social_youtube": "https://youtube.com",
+    "social_tiktok": "https://tiktok.com",
+    "social_instagram": "https://instagram.com"
+  },
+  "links": [
+    {
+      "label": "My Socials",
+      "url": "",
+      "icon": "fas fa-share-alt",
+      "animate": true,
+      "children": [
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com",
+          "icon": "fab fa-instagram",
+          "animate": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Website",
+      "url": "https://google.com",
+      "icon": "fas fa-globe",
+      "animate": false,
+      "children": []
+    }
+  ]
+}
