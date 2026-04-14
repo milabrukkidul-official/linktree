@@ -4,7 +4,7 @@
 // Format URL:
 // https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/export?format=csv&gid=SHEET_GID
 // =============================================
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/export?format=csv&gid=0";
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1zmatM-3s1y24iqgM-CFPGJgClJ3MoaNLkcGDZ3ej2Vc/export?format=csv&gid=0";
 
 // Icon mapping berdasarkan nama kategori
 const iconMap = {
