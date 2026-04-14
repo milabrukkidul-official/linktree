@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0d3b1e 0%, #1a5c2a 50%, #0d3b1e 100%);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.3);
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.profile h1 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.profile p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
+
+#links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 16px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  backdrop-filter: blur(4px);
+}
+
+.link-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+.link-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+  width: 22px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.btn-arrow {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Sub-menu dropdown */
+.submenu {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0 4px 0;
+}
+
+.submenu.open {
+  display: flex;
+}
+
+.sub-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 13px 20px 13px 52px;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: background 0.2s;
+}
+
+.sub-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.loading {
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+.error {
+  text-align: center;
+  color: #ff8a8a;
+  padding: 20px;
+  font-size: 0.9rem;
+}
