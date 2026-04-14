@@ -8,7 +8,7 @@ const SHEET_URL = "https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/export?
 
 // Icon mapping berdasarkan nama kategori
 const iconMap = {
- "kurikulum":    "fa-solid fa-chalkboard-user",
+  "kurikulum":    "fa-solid fa-chalkboard-user",
   "kepegawaian":  "fa-solid fa-person-chalkboard",
   "kesiswaan":    "fa-solid fa-user-graduate",
   "operator":     "fa-solid fa-gear",
