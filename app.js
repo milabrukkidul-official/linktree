@@ -4,7 +4,7 @@
 // Format URL:
 // https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/export?format=csv&gid=SHEET_GID
 // =============================================
-const SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFuz0kDDst0NIb9mzlj1vlQfDL2qANCXWNwczmFqn3dgVEUHV4WT0IrSU0fHLZJTdVdpVKSX9Zo3mE/pub?output=csv";
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/export?format=csv&gid=0";
 
 // Icon mapping berdasarkan nama kategori
 const iconMap = {
@@ -112,10 +112,10 @@ function renderLinks(groups) {
 
       btn.addEventListener("click", () => {
         const isOpen = submenu.classList.toggle("open");
+        btn.classList.toggle("active", isOpen);
         btn.setAttribute("aria-expanded", isOpen);
         const arrow = btn.querySelector(".arrow-icon");
         arrow.style.transform = isOpen ? "rotate(90deg)" : "rotate(0deg)";
-        arrow.style.transition = "transform 0.2s";
       });
 
       wrapper.appendChild(btn);
@@ -143,3 +143,16 @@ async function loadData() {
 }
 
 loadData();
+
+// ── Sticky header: muncul setelah scroll melewati profile ──
+const stickyHeader = document.querySelector(".sticky-header");
+const profile = document.querySelector(".profile");
+
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    stickyHeader.classList.toggle("visible", !entry.isIntersecting);
+  },
+  { threshold: 0.1 }
+);
+
+if (profile) observer.observe(profile);
