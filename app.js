@@ -13,6 +13,7 @@ const iconMap = {
   "kesiswaan":    "fa-solid fa-user-graduate",
   "operator":     "fa-solid fa-gear",
   "kehumasan":    "fa-solid fa-circle-info",
+  "sarpras":    "fa-solid fa-toolbox",
   "default":      "fa-solid fa-link"
 };
 
